@@ -11,8 +11,23 @@
 
 import UIKit
 
-class HostViewController: UIViewController {
+class HostViewController: UIViewController, UITextFieldDelegate {
+    var game: Game?
 
+    @IBOutlet var redScoreField: UITextField!
+    @IBOutlet var blueScoreField: UITextField!
+    @IBOutlet var greenScoreField: UITextField!
+    
+    @IBOutlet var redBuzzerButton: UIButton!
+    @IBOutlet var blueBuzzerButton: UIButton!
+    @IBOutlet var greenBuzzerButton: UIButton!
+    
+    @IBOutlet var startGameButton: UIButton!
+    @IBOutlet var correctAnswerButton: UIButton!
+    @IBOutlet var incorrectAnswerButton: UIButton!
+    @IBOutlet var modeButton: UIButton!
+    @IBOutlet var boardButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,15 +39,44 @@ class HostViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
-    */
+    
+    func updateGameState() {
+        
+    }
+
+    
+    @IBAction func startGameButtonAction(sender: UIButton) {
+        
+    }
+    
+    @IBAction func correctAnswerButtonAction(sender: UIButton) {
+        
+    }
+    
+    @IBAction func incorrectAnswerButtonAction(sender: UIButton) {
+        
+    }
+    
+    @IBAction func modeButtonAction(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func boardButtonAction(sender: AnyObject) {
+        
+    }
+    
+    // MARK: - Text Field Delegate
+    
+    func textField(textField: UITextField!, shouldChangeCharactersInRange range: NSRange, replacementString string: String!) -> Bool {
+        let nonNumeric = NSCharacterSet.decimalDigitCharacterSet().invertedSet
+        if let range = string.rangeOfCharacterFromSet(nonNumeric, options: nil, range: string.startIndex..<string.endIndex) {
+            return false // Do not allow non-numeric characters
+        } else {
+            return true
+        }
+    }
 
 }

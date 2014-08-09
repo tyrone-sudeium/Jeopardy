@@ -11,6 +11,7 @@ import Foundation
 class Question {
     let text: String
     let value: Int32 // Currency in cents.
+    var imageURL: NSURL?
     weak var category: Category?
     
     init(_ text: String, forAmount: Int32) {
