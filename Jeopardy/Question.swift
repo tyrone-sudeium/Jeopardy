@@ -19,14 +19,14 @@ class Question {
     
     init(_ text: String, forAmount: Int32, answer: String) {
         self.text = text
-        self.value = forAmount
+        value = forAmount
         self.answer = answer
-        self.dailyDouble = false
+        dailyDouble = false
     }
     
     init(_ text: String, forAmount: Int32, answer: String, dailyDouble: Bool) {
         self.text = text
-        self.value = forAmount
+        value = forAmount
         self.answer = answer
         self.dailyDouble = dailyDouble
     }
@@ -52,10 +52,10 @@ class Question {
             dailyDouble = false
         }
         self.init(str!, forAmount: val, answer: answer!, dailyDouble: dailyDouble!)
-        self.parseURLFromJSON(json, bundle: bundle, jsonKey: "image") { url in
+        parseURLFromJSON(json, bundle: bundle, jsonKey: "image") { url in
             self.imageURL = url
         }
-        self.parseURLFromJSON(json, bundle: bundle, jsonKey: "sound") { url in
+        parseURLFromJSON(json, bundle: bundle, jsonKey: "sound") { url in
             self.soundURL = url
         }
     }

@@ -20,8 +20,8 @@ class Game {
     }
     
     init(bundle: NSBundle) {
-        self.resourceBundle = bundle
-        self.categories = []
+        resourceBundle = bundle
+        categories = []
         let boardURL = bundle.URLForResource("board", withExtension: "json")
         var error: NSErrorPointer = nil
         let boardJSON = NSJSONSerialization.JSONObjectWithData(NSData(contentsOfURL: boardURL), options: nil, error: error) as NSDictionary
@@ -31,7 +31,7 @@ class Game {
         }
         let categoriesJSON = boardJSON["categories"] as [NSDictionary]
         for categoryJSON in categoriesJSON {
-            self.categories.append(Category(fromJSON: categoryJSON, game: self))
+            categories.append(Category(fromJSON: categoryJSON, game: self))
         }
     }
 }
