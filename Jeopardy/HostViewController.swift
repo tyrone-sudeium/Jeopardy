@@ -25,7 +25,7 @@ class HostViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var startGameButton: UIButton!
     @IBOutlet var correctAnswerButton: UIButton!
     @IBOutlet var incorrectAnswerButton: UIButton!
-    @IBOutlet var modeButton: UIButton!
+    @IBOutlet var modeButton: PickerButton!
     @IBOutlet var boardButton: PickerButton!
     
     override func viewDidLoad() {
@@ -34,6 +34,9 @@ class HostViewController: UIViewController, UITextFieldDelegate {
         let options: [String] = bundles.map { $0.bundlePath.lastPathComponent.stringByDeletingPathExtension }
         boardButton.titleTransformer = { return "Board: \($0)" }
         boardButton.options = options
+        
+        modeButton.titleTransformer = { return "Mode: \($0)" }
+        modeButton.options = [GameMode.Jeopardy.toRaw(), GameMode.DoubleJeopardy.toRaw(), GameMode.FinalJeopardy.toRaw()]
         // Do any additional setup after loading the view.
     }
 

@@ -10,9 +10,16 @@
 
 import UIKit
 
+enum GameMode: String {
+    case Jeopardy = "Jeopardy"
+    case DoubleJeopardy = "Double Jeopardy"
+    case FinalJeopardy = "Final Jeopardy"
+}
+
 class Game {
     let resourceBundle: NSBundle
     var categories: [Category]
+    var mode: GameMode = .Jeopardy
     
     convenience init() {
         let bundle = NSBundle(URL: NSBundle.mainBundle().URLForResource("Game", withExtension: "bundle"))
