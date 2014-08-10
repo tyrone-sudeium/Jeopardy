@@ -26,11 +26,14 @@ class HostViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var correctAnswerButton: UIButton!
     @IBOutlet var incorrectAnswerButton: UIButton!
     @IBOutlet var modeButton: UIButton!
-    @IBOutlet var boardButton: UIButton!
+    @IBOutlet var boardButton: PickerButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let bundles = BundleLoader.availableBundles()
+        let options: [String] = bundles.map { $0.bundlePath.lastPathComponent.stringByDeletingPathExtension }
+        boardButton.titleTransformer = { return "Board: \($0)" }
+        boardButton.options = options
         // Do any additional setup after loading the view.
     }
 

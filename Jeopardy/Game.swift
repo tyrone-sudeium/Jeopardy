@@ -31,7 +31,7 @@ class Game {
         }
         let categoriesJSON = boardJSON["categories"] as [NSDictionary]
         for categoryJSON in categoriesJSON {
-            self.categories.append(Category(fromJSON: categoryJSON))
+            self.categories.append(Category(fromJSON: categoryJSON, game: self))
         }
     }
 }

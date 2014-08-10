@@ -18,13 +18,13 @@ class Category {
         self.questions = questions
     }
     
-    convenience init(fromJSON json: NSDictionary) {
+    convenience init(fromJSON json: NSDictionary, game: Game?) {
         let questionsJSON = json["questions"] as [NSDictionary]
         let title = json["title"] as String
         var qs: [Question] = []
         
         for json in questionsJSON {
-            let q = Question(fromJSON: json)
+            let q = Question(fromJSON: json, bundle: game?.resourceBundle)
             qs.append(q)
         }
         self.init(title, questions: qs)

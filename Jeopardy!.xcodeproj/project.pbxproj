@@ -11,6 +11,9 @@
 		5975A9A419935B8700A1424C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5975A9A219935B8700A1424C /* Main.storyboard */; };
 		5975A9A619935B8700A1424C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5975A9A519935B8700A1424C /* Images.xcassets */; };
 		5975A9B219935B8800A1424C /* JeopardyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A9B119935B8800A1424C /* JeopardyTests.swift */; };
+		8B6837351997322800B75F87 /* Base.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8B6837341997322800B75F87 /* Base.bundle */; };
+		8B683737199735C400B75F87 /* BundleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B683736199735C400B75F87 /* BundleLoader.swift */; };
+		8B683739199748F400B75F87 /* PickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B683738199748F400B75F87 /* PickerButton.swift */; };
 		8B9364D31994AEAF002E157B /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9364D21994AEAF002E157B /* GameBoardView.swift */; };
 		8B9364D51994AED0002E157B /* GameBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9364D41994AED0002E157B /* GameBoardViewController.swift */; };
 		8B9364D71994AF04002E157B /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9364D61994AF04002E157B /* HostViewController.swift */; };
@@ -46,6 +49,9 @@
 		5975A9AB19935B8700A1424C /* Jeopardy!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jeopardy!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5975A9B019935B8800A1424C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5975A9B119935B8800A1424C /* JeopardyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeopardyTests.swift; sourceTree = "<group>"; };
+		8B6837341997322800B75F87 /* Base.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Base.bundle; sourceTree = "<group>"; };
+		8B683736199735C400B75F87 /* BundleLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleLoader.swift; sourceTree = "<group>"; };
+		8B683738199748F400B75F87 /* PickerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerButton.swift; sourceTree = "<group>"; };
 		8B9364D21994AEAF002E157B /* GameBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
 		8B9364D41994AED0002E157B /* GameBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardViewController.swift; sourceTree = "<group>"; };
 		8B9364D61994AF04002E157B /* HostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				5975A99E19935B8700A1424C /* AppDelegate.swift */,
+				8B683736199735C400B75F87 /* BundleLoader.swift */,
 				8B9364D81994AFF0002E157B /* ButtonService.swift */,
 				8B9364DA1994B08D002E157B /* Game.swift */,
 				8BE4B72F1994DC3600E4584D /* Category.swift */,
@@ -102,8 +109,10 @@
 				8B9364D21994AEAF002E157B /* GameBoardView.swift */,
 				8B9364D41994AED0002E157B /* GameBoardViewController.swift */,
 				8B9364D61994AF04002E157B /* HostViewController.swift */,
+				8B683738199748F400B75F87 /* PickerButton.swift */,
 				5975A9A219935B8700A1424C /* Main.storyboard */,
 				5975A9A519935B8700A1424C /* Images.xcassets */,
+				8B6837341997322800B75F87 /* Base.bundle */,
 				5975A99C19935B8700A1424C /* Supporting Files */,
 			);
 			path = Jeopardy;
@@ -216,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5975A9A419935B8700A1424C /* Main.storyboard in Resources */,
+				8B6837351997322800B75F87 /* Base.bundle in Resources */,
 				5975A9A619935B8700A1424C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +244,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B683737199735C400B75F87 /* BundleLoader.swift in Sources */,
+				8B683739199748F400B75F87 /* PickerButton.swift in Sources */,
 				8B9364D71994AF04002E157B /* HostViewController.swift in Sources */,
 				8B9364DB1994B08D002E157B /* Game.swift in Sources */,
 				8B9364D51994AED0002E157B /* GameBoardViewController.swift in Sources */,

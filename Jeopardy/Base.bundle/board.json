@@ -1,0 +1,154 @@
+{
+	"categories": [
+		{
+			"title": "Category A",
+			"questions": [
+				{
+					"text": "Category A: First question!",
+					"answer": "Category A: First question answer",
+					"value": 20000
+				},
+				{
+					"text": "Category A: Second question!",
+					"answer": "Category A: Second question answer",
+					"value": 40000
+				},
+				{
+					"text": "Category A: Third question!",
+					"answer": "Category A: Third question answer",
+					"value": 60000
+				},
+				{
+					"text": "Category A: Fourth question!",
+					"answer": "Category A: Fourth question answer",
+					"value": 80000
+				},
+				{
+					"text": "Category A: Fifth question!",
+					"answer": "Category A: Fifth question answer",
+					"value": 100000
+				},
+			]
+		},
+		{
+			"title": "Category B",
+			"questions": [
+				{
+					"text": "Category B: First question!",
+					"answer": "Category B: First question answer",
+					"value": 20000
+				},
+				{
+					"text": "Category B: Second question!",
+					"answer": "Category B: Second question answer",
+					"value": 40000
+				},
+				{
+					"text": "Category B: Third question!",
+					"answer": "Category B: Third question answer",
+					"value": 60000
+				},
+				{
+					"text": "Category B: Fourth question!",
+					"answer": "Category B: Fourth question answer",
+					"value": 80000
+				},
+				{
+					"text": "Category B: Fifth question!",
+					"answer": "Category B: Fifth question answer",
+					"value": 100000
+				},
+			]
+		},
+		{
+			"title": "Category C",
+			"questions": [
+				{
+					"text": "Category C: First question!",
+					"answer": "Category C: First question answer",
+					"value": 20000
+				},
+				{
+					"text": "Category C: Second question!",
+					"answer": "Category C: Second question answer",
+					"value": 40000
+				},
+				{
+					"text": "Category C: Third question!",
+					"answer": "Category C: Third question answer",
+					"value": 60000
+				},
+				{
+					"text": "Category C: Fourth question!",
+					"answer": "Category C: Fourth question answer",
+					"value": 80000
+				},
+				{
+					"text": "Category C: Fifth question!",
+					"answer": "Category C: Fifth question answer",
+					"value": 100000
+				},
+			]
+		},
+		{
+			"title": "Category D",
+			"questions": [
+				{
+					"text": "Category D: First question!",
+					"answer": "Category D: First question answer",
+					"value": 20000
+				},
+				{
+					"text": "Category D: Second question!",
+					"answer": "Category D: Second question answer",
+					"value": 40000
+				},
+				{
+					"text": "Category D: Third question!",
+					"answer": "Category D: Third question answer",
+					"value": 60000
+				},
+				{
+					"text": "Category D: Fourth question!",
+					"answer": "Category D: Fourth question answer",
+					"value": 80000
+				},
+				{
+					"text": "Category D: Fifth question!",
+					"answer": "Category D: Fifth question answer",
+					"value": 100000
+				},
+			]
+		},
+		{
+			"title": "Category E",
+			"questions": [
+				{
+					"text": "Category E: First question!",
+					"answer": "Category E: First question answer",
+					"value": 20000
+				},
+				{
+					"text": "Category E: Second question!",
+					"answer": "Category E: Second question answer",
+					"value": 40000
+				},
+				{
+					"text": "Category E: Third question!",
+					"answer": "Category E: Third question answer",
+					"value": 60000
+				},
+				{
+					"text": "Category E: Fourth question!",
+					"answer": "Category E: Fourth question answer",
+					"value": 80000
+				},
+				{
+					"text": "Category E: Fifth question!",
+					"answer": "Category E: Fifth question answer",
+					"value": 100000
+				},
+			]
+		}
+	]
+}
