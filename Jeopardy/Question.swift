@@ -9,49 +9,49 @@
 import Foundation
 
 class Question {
-    let text: String
-    let answer: String
-    let value: Int32 // Currency in cents.
-    var dailyDouble: Bool
+    let text: String = "Invalid question"
+    let answer: String = "Invalid question"
+    let value: Int = 0 // Currency in cents.
+    var dailyDouble: Bool = false
     var imageURL: NSURL?
     var soundURL: NSURL?
     weak var category: Category?
     
-    init(_ text: String, forAmount: Int32, answer: String) {
+    init() {
+        
+    }
+    
+    init(_ text: String, forAmount: Int, answer: String) {
         self.text = text
         value = forAmount
         self.answer = answer
         dailyDouble = false
     }
     
-    init(_ text: String, forAmount: Int32, answer: String, dailyDouble: Bool) {
+    init(_ text: String, forAmount: Int, answer: String, dailyDouble: Bool) {
         self.text = text
         value = forAmount
         self.answer = answer
         self.dailyDouble = dailyDouble
     }
     
-    convenience init(fromJSON json: NSDictionary, bundle: NSBundle?) {
-        var str: String? = json["text"] as? String
-        var valNum: NSNumber? = json["value"] as? NSNumber
-        var val: Int32
-        if str == .None {
-            str = "Invalid question"
+    init(fromJSON json: NSDictionary, bundle: NSBundle?) {
+        let str: String? = json["text"] as? String
+        let valNum: Int? = json["value"] as? Int
+        let answer: String? = json["answer"] as? String
+        let dailyDouble: Bool? = json["daily_double"] as? Bool
+        if str != nil {
+            self.text = str!
         }
-        if valNum == .None {
-            val = 0
-        } else {
-            val = Int32(valNum!.integerValue)
+        if valNum != nil {
+            self.value = valNum!
         }
-        var answer: String? = json["answer"] as? String
-        if answer == .None {
-            answer = "Invalid question"
+        if answer != nil {
+            self.answer = answer!
         }
-        var dailyDouble: Bool? = json["daily_double"] as? Bool
-        if dailyDouble == .None {
-            dailyDouble = false
+        if dailyDouble != nil {
+            self.dailyDouble = dailyDouble!
         }
-        self.init(str!, forAmount: val, answer: answer!, dailyDouble: dailyDouble!)
         parseURLFromJSON(json, bundle: bundle, jsonKey: "image") { url in
             self.imageURL = url
         }

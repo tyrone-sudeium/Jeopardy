@@ -112,7 +112,7 @@ class PickerButton: UIButton, UIPickerViewDelegate, UIPickerViewDataSource, UIPo
     }
     
     func pickerView(pickerView: UIPickerView!, titleForRow row: Int, forComponent component: Int) -> String! {
-        let ts = titles != nil ? titles! : options
+        let ts = titles ?? options
         return ts[row]
     }
     
