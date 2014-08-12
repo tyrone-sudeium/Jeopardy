@@ -13,11 +13,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="OPI-DX-n0y">
-                                <rect key="frame" x="84" y="867" width="600" height="136.99999907056508"/>
+                                <rect key="frame" x="84" y="867" width="600" height="136.99999869175406"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="at6-7J-YqJ">
-                                        <rect key="frame" x="0.0" y="36.999999070565082" width="200" height="100"/>
+                                        <rect key="frame" x="0.0" y="36.999998691754058" width="200" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <color key="backgroundColor" red="0.29207628965377808" green="0.0" blue="0.13919450342655182" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -26,7 +26,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="u0t-96-Brz">
-                                        <rect key="frame" x="200" y="36.999999070565082" width="200" height="100"/>
+                                        <rect key="frame" x="200" y="36.999998691754058" width="200" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <color key="backgroundColor" red="0.13015782833099365" green="0.044412679970264435" blue="0.21731874346733093" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -36,7 +36,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kGr-FH-fsI">
-                                        <rect key="frame" x="400" y="36.999999070565082" width="200" height="100"/>
+                                        <rect key="frame" x="400" y="36.999998691754058" width="200" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <color key="backgroundColor" red="0.055207598954439163" green="0.16108357906341553" blue="0.050530899316072464" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -87,6 +87,7 @@
                                         <connections>
                                             <action selector="boardButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ehn-xo-deG"/>
                                             <action selector="incorrectAnswerButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sY3-y4-qup"/>
+                                            <action selector="modePickerChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="M9R-wq-x8X"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y7d-k5-HfB" customClass="PickerButton" customModule="Jeopardy_" customModuleProvider="target">

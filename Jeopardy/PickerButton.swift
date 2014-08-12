@@ -22,6 +22,7 @@ class PickerButton: UIButton, UIPickerViewDelegate, UIPickerViewDataSource, UIPo
     var selectedIndex: Int = 0 {
         didSet {
             updateTitle()
+            sendActionsForControlEvents(.ValueChanged)
         }
     }
     lazy var titleTransformer: String -> String = { return $0 }
@@ -118,8 +119,6 @@ class PickerButton: UIButton, UIPickerViewDelegate, UIPickerViewDataSource, UIPo
     
     func pickerView(pickerView: UIPickerView!, didSelectRow row: Int, inComponent component: Int) {
         selectedIndex = row
-        updateTitle()
-        sendActionsForControlEvents(.ValueChanged)
     }
     
     // MARK: - Popover

@@ -30,9 +30,9 @@ class Game {
         resourceBundle = bundle
         categories = []
         let boardURL = bundle.URLForResource("board", withExtension: "json")
-        var error: NSErrorPointer = nil
-        let boardJSON = NSJSONSerialization.JSONObjectWithData(NSData(contentsOfURL: boardURL), options: nil, error: error) as NSDictionary
-        if let err = error.memory {
+        var error: NSError?
+        let boardJSON = NSJSONSerialization.JSONObjectWithData(NSData(contentsOfURL: boardURL), options: nil, error: &error) as NSDictionary
+        if let err = error {
             println(err.localizedDescription)
             return
         }

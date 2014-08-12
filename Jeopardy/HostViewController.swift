@@ -52,25 +52,35 @@ class HostViewController: UIViewController, UITextFieldDelegate {
     func updateGameState() {
         
     }
+    
+    @IBAction func modePickerChanged(sender: PickerButton!) {
+        let bundles = BundleLoader.availableBundles()
+        let pickedBundle = bundles[sender.selectedIndex]
+        loadGameBundle(pickedBundle)
+    }
+    
+    func loadGameBundle(gameBundle: NSBundle) {
+        game = Game(bundle: gameBundle)
+    }
 
     
-    @IBAction func startGameButtonAction(sender: UIButton) {
+    @IBAction func startGameButtonAction(sender: UIButton!) {
         
     }
     
-    @IBAction func correctAnswerButtonAction(sender: UIButton) {
+    @IBAction func correctAnswerButtonAction(sender: UIButton!) {
         
     }
     
-    @IBAction func incorrectAnswerButtonAction(sender: UIButton) {
+    @IBAction func incorrectAnswerButtonAction(sender: UIButton!) {
         
     }
     
-    @IBAction func modeButtonAction(sender: AnyObject) {
+    @IBAction func modeButtonAction(sender: AnyObject!) {
         
     }
     
-    @IBAction func boardButtonAction(sender: AnyObject) {
+    @IBAction func boardButtonAction(sender: AnyObject!) {
         
     }
     
